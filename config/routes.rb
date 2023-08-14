@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts, only: [:update, :show]
   resources :authors, only: [:show, :create]
 end
